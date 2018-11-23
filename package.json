@@ -1,6 +1,6 @@
 {
   "name": "ask-community-interceptors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Request and Response Interceptors for Alexa projects built with the ASK SDK v2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
