@@ -1,21 +1,12 @@
-import { HandlerInput } from "ask-sdk";
-import { RequestInterceptor } from "ask-sdk-runtime"
+// import { HandlerInput } from "ask-sdk-core";
+// import { RequestInterceptor } from "ask-sdk-runtime"
 
-
-// export interface RequestInterceptor<Input> {
-//     process(input: Input): Promise<void> | void;
-// }
-// export interface ResponseInterceptor<Input, Output> {
-//     process(input: Input, output?: Output): Promise<void> | void;
-// }
-
-
-export class LocalizationRequestInterceptor implements RequestInterceptor<HandlerInput> {
+// export class LocalizationRequestInterceptor implements RequestInterceptor<HandlerInput> {
     
-    process(handlerInput: HandlerInput): Promise<void> | void {
+//     process(handlerInput: HandlerInput): Promise<void> | void {
 
-    } 
-}
+//     } 
+// }
 
 // const LocalizationInterceptor = {
 //     process(handlerInput) {

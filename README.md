@@ -23,11 +23,15 @@ npm i -S ask-community-interceptors
 
 Here are the available Request Interceptors:
 
-* [LocalizationRequestInterceptor](./docs/LocalizationRequestInterceptor.md)
-* [ConsoleLogRequestInterceptor](./docs/ConsoleLogRequestInterceptor.md)
+* [LogRequestInterceptor](./docs/LogRequestInterceptor.md)
+* LocalizationRequestInterceptor (InProgress)
 
 
 Here are the available Response Interceptors:
 
-* ConsoleLogResponseInterceptor
-* RepeatSaveResponseInterceptor
+* [LogResponseInterceptor](./docs/LogResponseInterceptor.md)
+* RepeatSaveResponseInterceptor (Planned)
+
+This library also includes:
+* [ConsoleLogger](./docs/ConsoleLogger.md)
+* [ILogger](./docs/ILogger.md)

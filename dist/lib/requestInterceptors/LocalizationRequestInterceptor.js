@@ -1,16 +1,10 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-// export interface RequestInterceptor<Input> {
-//     process(input: Input): Promise<void> | void;
+// import { HandlerInput } from "ask-sdk-core";
+// import { RequestInterceptor } from "ask-sdk-runtime"
+// export class LocalizationRequestInterceptor implements RequestInterceptor<HandlerInput> {
+//     process(handlerInput: HandlerInput): Promise<void> | void {
+//     } 
 // }
-// export interface ResponseInterceptor<Input, Output> {
-//     process(input: Input, output?: Output): Promise<void> | void;
-// }
-class LocalizationRequestInterceptor {
-    process(handlerInput) {
-    }
-}
-exports.LocalizationRequestInterceptor = LocalizationRequestInterceptor;
 // const LocalizationInterceptor = {
 //     process(handlerInput) {
 //       const localizationClient = i18n.use(sprintf).init({
