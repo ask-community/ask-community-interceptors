@@ -4,7 +4,7 @@
 [![NPM Version](https://img.shields.io/npm/v/ask-community-interceptors.svg)](https://www.npmjs.com/package/ask-community-interceptors)
 [![NPM Downloads](https://img.shields.io/npm/dt/ask-community-interceptors.svg)](https://www.npmjs.com/package/ask-community-interceptors)
 
-# ASK Community Decorators
+# ASK Community Interceptors
 
 This library provides Request and Response Interceptors to use in building Alexa skills with the [ASK SDK v2](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs). 
 

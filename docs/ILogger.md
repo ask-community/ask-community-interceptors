@@ -1,6 +1,6 @@
 # ILogger
 
-A interface used in creating your own logger. This library include [ConsoleLogger](ConsoleLogger.md) which writes to `console.log`.
+A interface used in creating your own logger. This library includes [ConsoleLogger](ConsoleLogger.md) which writes to `console.log`.
 
 ## Usage
 
