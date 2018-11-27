@@ -1,7 +1,7 @@
-import { ILogger } from "./ILogger"
+import { ILogger } from './ILogger';
 
-export class ConsoleLogger implements ILogger {    
-    log(...args: any[]): void {
-        console.log.apply(console,arguments);
-    } 
+export class ConsoleLogger implements ILogger {
+    public log(...args: any[]): void {
+        console.log.apply(console, arguments);
+    }
 }

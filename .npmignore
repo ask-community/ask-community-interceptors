@@ -1,1 +1,6 @@
+.vscode/
+coverage/
+docs/
 lib/
+test/
+

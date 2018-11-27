@@ -1,27 +1,27 @@
-import { expect } from "chai";
-import { verify, anything, spy, capture } from "ts-mockito";
-import { HandlerInput } from "ask-sdk-core";
-import { IntentRequest, RequestEnvelope } from "ask-sdk-model";
+import { expect } from 'chai';
+import { verify, anything, spy, capture } from 'ts-mockito';
+import { HandlerInput } from 'ask-sdk-core';
+import { IntentRequest, RequestEnvelope } from 'ask-sdk-model';
 
-import { LogRequestInterceptor, ConsoleLogger, ILogger } from "../../lib/index";
+import { LogRequestInterceptor, ConsoleLogger, ILogger } from './../../index';
 
-describe("LogRequestInterceptor", () => {
-  describe("intercepting request", () => {
-    it("should log request object", () => {
-      const handlerInput = <HandlerInput>{
-        requestEnvelope: <RequestEnvelope>{
-          request: <IntentRequest>{
-            type: "IntentRequest",
-            requestId: "",
-            timestamp: "",
+describe('LogRequestInterceptor', () => {
+  describe('intercepting request', () => {
+    it('should log request object', () => {
+      const handlerInput = {
+        requestEnvelope: {
+          request: {
+            type: 'IntentRequest',
+            requestId: '',
+            timestamp: '',
             dialogState: {},
-            locale: "",
+            locale: '',
             intent: {
-              name: "TestIntent"
+              name: 'TestIntent'
             }
-          }
-        }
-      };
+          } as IntentRequest
+        } as RequestEnvelope
+      } as HandlerInput;
 
       const logger: ILogger = new ConsoleLogger();
       const spiedLogger = spy(logger);

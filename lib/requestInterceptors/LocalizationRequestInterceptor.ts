@@ -2,10 +2,10 @@
 // import { RequestInterceptor } from "ask-sdk-runtime"
 
 // export class LocalizationRequestInterceptor implements RequestInterceptor<HandlerInput> {
-    
+
 //     process(handlerInput: HandlerInput): Promise<void> | void {
 
-//     } 
+//     }
 // }
 
 // const LocalizationInterceptor = {

@@ -1,3 +1,3 @@
-export interface ILogger {    
-    log(...args: any[]): void;    
+export interface ILogger {
+    log(...args: any[]): void;
 }
