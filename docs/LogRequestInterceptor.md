@@ -22,3 +22,16 @@ exports.handler = skillBuilder
     .addRequestInterceptors(logRequestInterceptor)
     .lambda();
 ```
+
+```javascript
+//JavaScript
+const Interceptors = require('ask-community-interceptors');
+
+const logger = new Interceptors.ConsoleLogger();
+const logRequestInterceptor = new Interceptors.LogRequestInterceptor(logger);
+
+exports.handler = skillBuilder
+    ...
+    .addRequestInterceptors(logRequestInterceptor)
+    .lambda();
+```

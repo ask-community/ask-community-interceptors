@@ -19,6 +19,19 @@ const logResponseInterceptor = new LogResponseInterceptor(logger);
 
 exports.handler = skillBuilder
     ...
-    .addRequestInterceptors(logResponseInterceptor)
+    .addResponseInterceptors(logResponseInterceptor)
+    .lambda();
+```
+
+```javascript
+//JavaScript
+const Interceptors = require('ask-community-interceptors');
+
+const logger = new Interceptors.ConsoleLogger();
+const logResponseInterceptor = new Interceptors.LogResponseInterceptor(logger);
+
+exports.handler = skillBuilder
+    ...
+    .addResponseInterceptors(logResponseInterceptor)
     .lambda();
 ```

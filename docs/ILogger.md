@@ -16,9 +16,21 @@ If your skill is hosted in [AWS Lambda](https://aws.amazon.com/lambda/) then the
 
 ```ts
 //TypeScript
-import { LogRequestInterceptor, LogResponseInterceptor, ConsoleLogger, ILogger } from "ask-community-interceptors";
+import { ConsoleLogger, ILogger } from "ask-community-interceptors";
 
 const logger: ILogger = new ConsoleLogger();
-const logRequestInterceptor = new LogRequestInterceptor(logger);
-const logResponseInterceptor = new LogResponseInterceptor(logger)
+```
+
+Here is an example of how to use ILogger to create your own logger:
+
+```ts
+//TypeScript
+import { ILogger } from './ILogger';
+
+export class MyLogger implements ILogger {
+    public log(...args: any[]): void {
+        // implement log function
+        // console.log.apply(console, arguments);
+    }
+}
 ```
