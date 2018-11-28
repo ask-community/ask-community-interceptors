@@ -35,3 +35,8 @@ exports.handler = skillBuilder
     .addResponseInterceptors(logResponseInterceptor)
     .lambda();
 ```
+
+## CloudWatch Logs
+If your skill is hosted in [AWS Lambda](https://aws.amazon.com/lambda/) then the LogResponseInterceptor will write two entries in the [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) Logs:
+
+![alt text](./assets/CW-logResponseInterceptor.png)
